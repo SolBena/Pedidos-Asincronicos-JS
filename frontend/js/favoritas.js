@@ -4,12 +4,14 @@ window.onload = () => {
   container.setAttribute("class", "container");
   app.appendChild(container);
 
-  // Aqui debemos agregar nuestro fetch
+  
+  const data = JSON.parse(localStorage.getItem('favoritas'))
 
-
-
-  /** Codigo que debemos usar para mostrar los datos en el frontend
-    let data = peliculas.data;
+  if(data.length < 1 ) {
+    const h1 = document.createElement('h1')
+    h1.innerText = "No agregaste ninguna película a favoritos"
+    app.appendChild(h1)
+  } else {
 
     data.forEach((movie) => {
       const card = document.createElement("div");
@@ -34,5 +36,6 @@ window.onload = () => {
       }
       card.appendChild(duracion);
     });
-  */
+  
+}
 };

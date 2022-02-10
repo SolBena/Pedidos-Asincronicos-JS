@@ -12,9 +12,9 @@ html {
 }
 
 #root {
-  max-width: 1200px;
   margin: 0 auto;
 }
+
 
 h1 {
   text-align: center;
@@ -87,6 +87,22 @@ p {
 input, select{
   width: 60%;
   height: 25px;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.fav {
+   text-align: center;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 600px) {
